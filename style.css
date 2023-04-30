@@ -18,7 +18,7 @@
     --accent-color: var(--blue);
     --font-color: var(--gray);
 
-    --nav-height: 100px;
+    --nav-height: 85px;
 
     --header-1: 64px;
     --header-2: 48px;
@@ -46,7 +46,6 @@
 }
 
 body {
-    height: 100vh;
     background-color: var(--primary-color);
 }
 
@@ -57,6 +56,10 @@ li {
 a {
     text-decoration: none;
     font-size: 1rem;
+}
+
+.navbar {
+    background-color: var(--primary-light);
 }
 
 .nav-link {
@@ -160,15 +163,22 @@ a {
     font-size: 1.2rem;
 }
 
+.bg-secondary-nat {
+    background-color: var(--yellow) !important;
+}
+
 /* Section Hero */
 
 section.hero {
+    padding-top: var(--nav-height);
     margin: 5rem 0
 }
 
 .text-label,
 .text-hero-bold,
-.text-hero-regular {
+.text-hero-regular,
+.text-about-bold,
+.text-about-regular {
     margin: 24px 0;
 }
 
@@ -179,7 +189,8 @@ section.hero {
     line-height: 31px;
 }
 
-.text-hero-bold {
+.text-hero-bold,
+.text-about-bold {
     color: var(--gray);
     font-size: var(--header-1);
     font-weight: var(--font-weight-bold);
@@ -191,6 +202,13 @@ section.hero {
     font-size: var(--text-regular);
     font-weight: var(--font-weight-regular);
     line-height: 31px;
+}
+
+.text-about-regular {
+    color: var(--gray);
+    font-size: var(--text-regular);
+    font-weight: var(--font-weight-regular);
+    line-height: 25px;
 }
 
 /* RESPONSIVE DESIGN */
@@ -220,7 +238,9 @@ section.hero {
 
     .text-label,
     .text-hero-bold,
-    .text-hero-regular {
+    .text-hero-regular
+    .text-about-bold,
+    .text-about-regular {
         text-align: center;
     }
 
@@ -242,7 +262,8 @@ section.hero {
         margin: 1rem 0;
     }
 
-    .text-hero-bold {
+    .text-hero-bold,
+    .text-about-bold {
         font-weight: var(--font-weight-bold);
         font-size: var(--header-3);
         line-height: 64px;
@@ -260,7 +281,8 @@ section.hero {
         margin: 1rem 0;
     }
 
-    .text-hero-bold {
+    .text-hero-bold,
+    .text-about-bold {
         font-weight: var(--font-weight-bold);
         font-size: var(--header-3);
         line-height: 64px;
