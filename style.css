@@ -116,6 +116,10 @@ a {
     font-weight: var(--font-weight-medium);
 }
 
+.btn-primary:active {
+    background-color: var(--primary-dark) !important;
+}
+
 .btn-primary {
     background-color: var(--primary);
     border: none;
@@ -199,7 +203,10 @@ section.hero {
 }
 
 .text-hero-bold,
-.text-about-bold {
+.text-about-bold,
+.text-services-bold,
+.text-contact-bold,
+.text-work-bold {
     color: var(--gray);
     font-size: var(--header-1);
     font-weight: var(--font-weight-bold);
@@ -218,6 +225,13 @@ section.hero {
     font-size: var(--text-regular);
     font-weight: var(--font-weight-regular);
     line-height: 25px;
+}
+
+.text-form-subheader {
+    color: var(--gray);
+    font-size: var(--text-medium);
+    font-weight: var(--font-weight-medium);
+    line-height: 40px;
 }
 
 /* */
@@ -250,6 +264,10 @@ section.services {
     }
 }
 
+textarea {
+    height: 100% !important;
+}
+
 /* Mobile version */
 
 @media (max-width: 576px) {
@@ -271,11 +289,19 @@ section.services {
     .text-hero-bold,
     .text-hero-regular
     .text-about-bold,
-    .text-about-regular {
+    .text-about-regular,
+    .text-services-bold,
+    .text-contact-bold,
+    .text-work-bold {
         text-align: center;
     }
 
-    .text-hero-bold {
+    .text-hero-bold,
+    .text-about-bold,
+    .text-services-bold,
+    .text-contact-bold,
+    .text-work-bold,
+    .text-blog-bold {
         font-weight: var(--font-weight-bold);
         font-size: var(--header-3);
         line-height: 64px;
@@ -294,7 +320,11 @@ section.services {
     }
 
     .text-hero-bold,
-    .text-about-bold {
+    .text-about-bold,
+    .text-services-bold,
+    .text-contact-bold,
+    .text-work-bold,
+    .text-blog-bold {
         font-weight: var(--font-weight-bold);
         font-size: var(--header-3);
         line-height: 64px;
@@ -307,19 +337,28 @@ section.services {
 
 /* Tablet medium $ large version only */
 
-@media (max-width: 768px) {
-    section.hero {
+@media (max-width: 992px) {
+    section.hero,
+    section.about,
+    section.services,
+    section.contact,
+    section.work,
+    section.blog {
         margin: 1rem 0;
     }
 
     .text-hero-bold,
-    .text-about-bold {
+    .text-about-bold,
+    .text-services-bold,
+    .text-contact-bold,
+    .text-work-bold,
+    .text-blog-bold {
         font-weight: var(--font-weight-bold);
         font-size: var(--header-3);
         line-height: 64px;
     }
 
     section.hero img {
-        margin: 1rem 0;
+        margin: 2rem 0;
     }
 }

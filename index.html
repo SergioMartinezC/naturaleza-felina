@@ -13,7 +13,7 @@
         <nav class="navbar fixed-top navbar-expand-xl shadow-sm">
             <div class="container">
                 <!-- Logo -->
-              <a class="navbar-brand fs-4" href="#"><img class="logo-img" src="../nat-felina/assets/images/logo-no-background.png"></a>
+              <a class="navbar-brand fs-4" href="#"><img class="logo-img" src="assets/images/logo-no-background.png"></a>
               <!-- Toggle Btn-->
               <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@
                 <div class="offcanvas-body d-flex flex-column flex-xl-row p-4 p-xl-0">
                   <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1">
                     <li class="nav-item mx-2">
-                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      <a class="nav-link active" aria-current="page" href="#hero">Inicio</a>
                     </li>
                     <li class="nav-item mx-2">
                       <a class="nav-link" href="#about">Sobre mí</a>
@@ -57,7 +57,7 @@
             </div>
           </nav>
           <!-- Hero Section -->
-          <section class="hero">
+          <section class="hero" id="hero">
             <div class="container">
               <div class="row">
                 <div class="col-md-6">
@@ -78,7 +78,7 @@
                   </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="2000">
-                  <img class="img-fluid img-thumbnail" src="../nat-felina/assets/images/hero.png" alt="img">
+                  <img src="assets/images/hero.png" class="w-100" alt="img">
                 </div>
               </div>
             </div>
@@ -87,9 +87,6 @@
           <section class="about" id="about">
             <div class="container bg-secondary-nat">
               <div class="row">
-                <div class="col-md-6 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="2000">
-                  <img class="img-fluid" src="../nat-felina/assets/images/about-removeb.png" alt="img">
-                </div>
                 <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
                   <div class="text-about-bold">
                     Sobre mí
@@ -102,18 +99,21 @@
                     Creo firmemente que todos los gatos merecen un hogar feliz y saludable y estoy comprometida a ayudar a los dueños a lograrlo. Si tienes alguna pregunta o necesitas ayuda con el comportamiento de tu gato, no dudes en ponerte en contacto conmigo. ¡Estoy aquí para ayudarte! <br><br>
                   </div>
                 </div>
+                <div class="col-md-6 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="2000">
+                  <img src="assets/images/about-removeb.png" class="w-100" alt="img">
+                </div>
               </div>
             </div>
           </section>
           <section class="services" id="services">
-            <div class="container bg-primary-nat" data-aos="fade-up" data-aos-duration="2000">
-              <div class="text-about-bold">
+            <div class="container bg-primary-nat">
+              <div class="text-services-bold">
                 Servicios
               </div>
               <div class="row g-3">
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-left" data-aos-duration="2000">
                   <div class="card">
-                    <img src="../nat-felina/assets/images/gaia.png" class="card-img-top" alt="...">
+                    <img src="assets/images/card-2.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Asesoría Bienestar Felino</h5>
                       <p class="card-text">
@@ -122,35 +122,34 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-down" data-aos-duration="2000">
                   <div class="card">
-                    <img src="../nat-felina/assets/images/gaia.png" class="card-img-top" alt="...">
+                    <img src="assets/images/card-3.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Asesoría Bienestar Felino Integral</h5>
                       <p class="card-text">
                         Asesoría para gatos que incluye análisis del carácter, entorno, alimentación, juego y relaciones humano-gato. 
-                        Se elabora un informe personalizado con recomendaciones para mejorar la vida del gato, y se brinda un 
-                        acompañamiento de un mes por escrito. No apta para casos con necesidades especiales o problemas de convivencia. 
+                        . No apta para casos con necesidades especiales o problemas de convivencia. 
                         Hay precio especial si convives con más de un gato.</p>
                       <a href="#" class="btn btn-primary">Más información</a>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
                   <div class="card">
-                    <img src="../nat-felina/assets/images/gaia.png" class="card-img-top" alt="...">
+                    <img src="assets/images/card-4.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Asesoría Bienestar Felino</h5>
+                      <h5 class="card-title">Asesoramiento preventivo</h5>
                       <p class="card-text">Ideal si vas a adoptar un gato, si ya tienes gato pero no tienes claro si tiene todo lo necesario para su bienestar o si estás perdid@ en cuanto cuidados, entretenimiento, etc..</p>
                       <a href="#" class="btn btn-primary">Más información</a>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-right" data-aos-duration="2000">
                   <div class="card">
-                    <img src="../nat-felina/assets/images/gaia.png" class="card-img-top" alt="...">
+                    <img src="assets/images/card-1.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Asesoría Bienestar Felino</h5>
+                      <h5 class="card-title">Consulta problemas de conducta</h5>
                       <p class="card-text">Ideal si vas a adoptar un gato, si ya tienes gato pero no tienes claro si tiene todo lo necesario para su bienestar o si estás perdid@ en cuanto cuidados, entretenimiento, etc..</p>
                       <a href="#" class="btn btn-primary">Más información</a>
                     </div>
@@ -159,15 +158,77 @@
               </div>
             </div>
           </section>
-          <!-- Testimoni Brand Section -->
-          <section class="testimoni-brand">
+          <!-- Contact Section -->
+          <section class="contact" id="contact">
             <div class="container">
+              <div class="text-contact-bold">
+                Contacto
+              </div>
+              <div class="text-form-subheader">
+                Datos personales
+              </div>
               <div class="row">
-                <div class="col-md-12 mt-5 mb-5 text-center">
-                  <img src="" class="w-100" alt="testimoni-brand">
+                <div class="col-md-6">
+                  <div class="form-floating mb-3">
+                    <input type="text" id="name" class="form-control" placeholder="Nombre">
+                    <label for="name">Nombre</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating mb-3">
+                    <input type="text" id="lastname" class="form-control" placeholder="Apellidos">
+                    <label for="lastname">Apellidos</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="form-floating mb-3">
+                    <input type="email" id="email" class="form-control" placeholder="Email">
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-floating mb-3">
+                    <input type="tel" id="phone" class="form-control" placeholder="Teléfono de contacto">
+                    <label for="phone">Teléfono de contacto</label>
+                  </div>
+                </div>
+              </div>
+              <div class="text-form-subheader">
+                Datos de los gatos
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-floating mb-3">
+                    <span class="tt" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ejemplo: Maui, 3 años; Gaia, 1 año.">
+
+                    </span>
+                    <input type="text" id="cat-info" class="form-control" placeholder="Maui, 3 años; Gaia, 1 año; etc">
+                    <label for="cat-info">Nombre y edad de los gatos</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-floating mb-3">
+                    <textarea name="" id="description" placeholder="Descripción breve de la consulta" cols="30" rows="10" class="form-control"></textarea>
+                    <label for="description">Descripción breve de la consulta</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-2">
+                  <button type="submit" class="btn btn-primary">Enviar</a>
                 </div>
               </div>
             </div>
+          </section>
+          <section class="work" id="work">
+
+          </section>
+          <section class="blog" id="blog">
+
           </section>
           <!-- AOS JS-->
           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
