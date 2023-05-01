@@ -3,4 +3,22 @@ $(document).ready(function(){
         $('.navbar-nav a.active').removeClass('active');
         $(this).addClass('active');
     })
-})
+});
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+        var scrollPos = $(document).scrollTop();
+        $('.nav-link').each(function() {
+            var currLink = $(this);
+            var href = currLink.attr('href');
+            var refElement = $('#' + href.split('#')[1]);
+            if (refElement[0] == undefined) {
+                console.log(href);
+            }
+            if (refElement[0].offsetTop <= scrollPos && refElement[0].offsetTop + refElement[0].offsetHeight > scrollPos) {
+                $('.nav-link').removeClass('active');
+                currLink.addClass('active');
+            }
+        });
+    });
+});
