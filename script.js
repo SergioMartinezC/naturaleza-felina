@@ -22,3 +22,14 @@ $(document).ready(function() {
         });
     });
 });
+
+$(document).ready(function(){
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+            $(".navbar").addClass("fixed-top");
+        } else {
+            $(".navbar").removeClass("fixed-top");
+        }
+    });
+});
