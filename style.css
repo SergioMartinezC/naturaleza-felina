@@ -169,9 +169,14 @@ a {
     color: var(--gray);
 }
 
-.socials a {
-    color: var(--font-color);
+.social-link {
+    color: var(--font-color) !important;
     font-size: 1.2rem;
+    transition: transform .2s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
 }
 
 .bg-secondary-nat {
@@ -282,6 +287,10 @@ textarea {
 /* Mobile version */
 
 @media (max-width: 576px) {
+    .about-image-container {
+        order: 10;
+    }
+
     section.hero {
         margin: 2rem 0;
         text-align: center;
@@ -326,6 +335,10 @@ textarea {
 /* Tablet small version only */
 
 @media (max-width: 768px) {
+    .about-image-container {
+        order: 10;
+    }
+
     section.hero {
         margin: 1rem 0;
     }
