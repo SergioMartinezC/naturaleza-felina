@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
 
 /* Colors */
 
@@ -18,7 +17,7 @@
     --primary-blur: #CBCCCC;
     /*--primary-blur: #728181;*/
     --accent-color: var(--blue);
-    --font-color: var(--gray);
+    --font-color: var(black);
 
     --nav-height: 85px;
 
@@ -27,6 +26,7 @@
     --header-3: 42px;
     --header-4: 32px;
 
+    --text-large: 22px;
     --text-medium: 18px;
     --text-regular: 16px;
     --text-light: 13px;
@@ -44,7 +44,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Serif', serif;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -79,7 +79,7 @@ a {
     background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), linear-gradient(
         rgba(0,0,0,0),
         rgba(0,0,0,0)
-    ), linear-gradient(var(--font-color), var(--font-color));
+    ), linear-gradient(var(--primary-dark), var(--primary-dark));
     background-size: 20px 1px, 100% 2px, 0 1px;
     background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
     background-repeat: no-repeat;
@@ -89,12 +89,13 @@ a {
 }
 
 .nav-link:hover {
-    color: var(--font-color);
+    color: var(--primary-dark);
     background-size: 20px 1px, 0 1px, 100% 1px !important;
     background-position: calc(100% + 20px) 100%, 100% 100%, 0 100% !important;
 }
 
 .nav-link.active {
+    color: var(--primary-dark) !important;
     background-size: 20px 1px, 0 1px, 100% 1px !important;
     background-position: calc(100% + 20px) 100%, 100% 100%, 0 100% !important;
 }
@@ -148,17 +149,17 @@ a {
 .btn-primary {
     background-color: var(--primary);
     border: none;
-    color: var(--gray);
+    color: var(--font-color);
 }
 
 .btn-primary:focus {
     background-color: var(--yellow);
-    color: var(--gray);
+    color: var(--font-color);
 }
 
 .btn-primary:hover {
     background-color: var(--yellow);
-    color: var(--gray);
+    color: var(--font-color);
 }
 
 .btn-secondary {
@@ -175,6 +176,24 @@ a {
 
 .btn-secondary:hover {
     background-color: white;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.05) !important;
+    color: var(--gray);
+}
+
+.btn-service {
+    background-color: white;
+    color: var(--font-color);
+    border: none;
+}
+
+.btn-service:focus {
+    background-color: white;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.05) !important;
+    color: var(--gray);
+}
+
+.btn-service:hover {
+    background-color: var(--blue);
     box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.05) !important;
     color: var(--gray);
 }
@@ -224,19 +243,26 @@ section.hero {
     margin: 5rem 0
 }
 
-.text-label,
+.service-background {
+    background-color: var(--primary-dark);
+}
+
 .text-hero-bold,
 .text-hero-regular,
 .text-about-bold,
-.text-about-regular {
+.text-about-regular,
+.text-services-bold,
+.text-contact-bold,
+.text-work-bol {
     margin: 24px 0;
 }
 
 .text-label {
     color: var(--primary-dark);
-    font-size: var(--text-regular);
+    font-size: var(--text-large);
     font-weight: var(--font-weight-regular);
     line-height: 31px;
+    margin-top: 24px;
 }
 
 .text-hero-bold,
@@ -244,7 +270,7 @@ section.hero {
 .text-services-bold,
 .text-contact-bold,
 .text-work-bold {
-    color: var(--gray);
+    color: var(--font-color);
     font-size: var(--header-1);
     font-weight: var(--font-weight-bold);
     line-height: 74px;
@@ -252,28 +278,28 @@ section.hero {
 
 .text-hero-regular,
 .text-about-regular {
-    color: var(--gray);
+    color: var(--font-color);
     font-size: var(--text-regular);
     font-weight: var(--font-weight-regular);
     line-height: 31px;
 }
 
 .text-service {
-    color: var(--font-color);
+    color: var(--primary-light);
     font-size: var(--text-regular);
     font-weight: var(--font-weight-medium);
-    line-height: 31px;
+    line-height: 27px;
 }
 
 .text-form-subheader {
-    color: var(--gray);
+    color: var(--font-color);
     font-size: var(--text-medium);
     font-weight: var(--font-weight-medium);
     line-height: 40px;
 }
 
 .text-subheader {
-    color: var(--gray);
+    color: var(--primary-light);
     font-size: var(--text-medium);
     font-weight: var(--font-weight-bold);
     line-height: 30px;
