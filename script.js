@@ -6,6 +6,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function() {
+    var scrollOffset = 121;
     $(window).scroll(function() {
         var scrollPos = $(document).scrollTop();
         $('.nav-link').each(function() {
@@ -15,7 +16,7 @@ $(document).ready(function() {
             if (refElement[0] == undefined) {
                 console.log(href);
             }
-            if (refElement[0].offsetTop <= scrollPos && refElement[0].offsetTop + refElement[0].offsetHeight > scrollPos) {
+            if (refElement[0].offsetTop - scrollOffset <= scrollPos && refElement[0].offsetTop - scrollOffset + refElement[0].offsetHeight > scrollPos) {
                 $('.nav-link').removeClass('active');
                 currLink.addClass('active');
             }
