@@ -21,16 +21,16 @@
 
     --nav-height: 85px;
 
-    --header-1: 64px;
-    --header-2: 48px;
-    --header-3: 42px;
-    --header-4: 32px;
-    --header-5: 28px;
+    --header-1: 2.8rem;
+    --header-2: 2.5rem;
+    --header-3: 2.3rem;
+    --header-4: 2.1rem;
+    --header-5: 1.9rem;
 
-    --text-large: 22px;
-    --text-medium: 18px;
-    --text-regular: 16px;
-    --text-light: 13px;
+    --text-large: 1.4rem;
+    --text-medium: 1.3rem;
+    --text-regular: 1.2rem;
+    --text-light: 1rem;
 
     --font-weight-bold: 700;
     --font-weight-semi-bold: 600;
