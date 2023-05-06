@@ -25,6 +25,7 @@
     --header-2: 48px;
     --header-3: 42px;
     --header-4: 32px;
+    --header-5: 28px;
 
     --text-large: 22px;
     --text-medium: 18px;
@@ -162,6 +163,15 @@ a {
     color: var(--font-color);
 }
 
+.btn-primary-dark {
+    background-color: var(--primary-dark);
+}
+
+.btn-primary-dark:hover {
+    background-color: var(--primary-color);
+    color: var(--primary-dark);
+}
+
 .btn-secondary {
     background-color: var(--gray-light);
     color: white;
@@ -258,14 +268,12 @@ section.hero {
 }
 
 .text-label {
-    color: var(--primary-dark);
     font-size: var(--text-large);
     font-weight: var(--font-weight-regular);
     line-height: 31px;
     margin-top: 24px;
 }
 
-.text-hero-bold,
 .text-about-bold,
 .text-services-bold,
 .text-contact-bold,
@@ -276,12 +284,24 @@ section.hero {
     line-height: 74px;
 }
 
+.text-hero-bold {
+    color: var(--font-color);
+    font-size: var(--header-2);
+    font-weight: var(--font-weight-bold);
+    line-height: 67px;
+    width: 50%;
+}
+
 .text-hero-regular,
 .text-about-regular {
     color: var(--font-color);
     font-size: var(--text-regular);
     font-weight: var(--font-weight-regular);
     line-height: 31px;
+}
+
+.text-hero-wrapper {
+    width: 50%;
 }
 
 .text-service {
@@ -328,6 +348,25 @@ section.services {
     background-color: rgba(0, 0, 0, .2);
 }
 
+.banner-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 100%;
+    padding: 10px 40px;
+    color: var(--blue-3);
+    z-index: 1000;
+}
+
+.carousel-item img {
+    min-width: 800px;
+    height: auto;
+  }
+
+
 /* RESPONSIVE DESIGN */
 
 @media (min-width: 1399.98px) {
@@ -340,12 +379,134 @@ textarea {
     height: 100% !important;
 }
 
-/* Mobile version */
 
-@media (max-width: 576px) {
+
+/* Tablet medium $ large version only */
+
+
+
+@media (max-width: 1200px) {
+    .text-hero-regular {
+        font-size: 13px;
+    }
+
+    section.hero,
+    section.about,
+    section.services,
+    section.contact,
+    section.work,
+    section.blog {
+        margin: 1rem 0;
+    }
+
+    .text-hero-bold,
+    .text-about-bold,
+    .text-services-bold,
+    .text-contact-bold,
+    .text-work-bold,
+    .text-blog-bold {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--header-3);
+        line-height: 64px;
+    }
+
+    #carouselExampleIndicators {
+        width: 100% !important;
+    }
+}
+
+
+@media (max-width: 992px) {
     .about-image-container {
         order: 10;
     }
+
+    .text-hero-regular {
+        font-size: 15px;
+        margin-top: 12px;
+        margin-bottom: 30px;
+    }
+
+    .text-hero-bold {
+        width: 100%;
+    }
+
+    .banner-content {
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+    }
+
+    section.hero,
+    section.about,
+    section.services,
+    section.contact,
+    section.work,
+    section.blog {
+        margin: 1rem 0;
+    }
+
+    .text-hero-bold,
+    .text-about-bold,
+    .text-services-bold,
+    .text-contact-bold,
+    .text-work-bold,
+    .text-blog-bold {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--header-3);
+        line-height: 64px;
+    }
+
+    /* Tablet small version only */
+
+    
+}
+
+@media (max-width: 768px) {
+    .banner-content {
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+    }
+
+    .text-hero-bold {
+        width: 100%;
+    }
+
+    .about-image-container {
+        order: 10;
+    }
+
+    section.hero {
+        margin: 1rem 0;
+    }
+
+    .text-hero-bold,
+    .text-about-bold,
+    .text-services-bold,
+    .text-contact-bold,
+    .text-work-bold,
+    .text-blog-bold {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--header-4);
+        line-height: 64px;
+    }
+
+    .text-label,
+    .text-hero-bold,
+    .text-hero-regular,
+    .text-about-bold,
+    .text-about-regular,
+    .text-services-bold,
+    .text-contact-bold,
+    .text-work-bold {
+        text-align: center;
+    }
+}
+
+/* Mobile version */
+
+@media (max-width: 576px) {
 
     section.hero,
     section.about {
@@ -384,88 +545,12 @@ textarea {
         line-height: 64px;
     }
 
-    section.hero img {
-        margin: 2rem 0;
-    }
-}
-
-/* Tablet small version only */
-
-@media (max-width: 768px) {
-    .about-image-container {
-        order: 10;
+    .text-hero-bold {
+        font-size: var(--header-5);
     }
 
-    section.hero {
-        margin: 1rem 0;
-    }
-
-    .text-hero-bold,
-    .text-about-bold,
-    .text-services-bold,
-    .text-contact-bold,
-    .text-work-bold,
-    .text-blog-bold {
-        font-weight: var(--font-weight-bold);
-        font-size: var(--header-3);
-        line-height: 64px;
-    }
-
-    section.hero img {
-        margin: 1rem 0;
-    }
-}
-
-/* Tablet medium $ large version only */
-
-@media (max-width: 992px) {
-    section.hero,
-    section.about,
-    section.services,
-    section.contact,
-    section.work,
-    section.blog {
-        margin: 1rem 0;
-    }
-
-    .text-hero-bold,
-    .text-about-bold,
-    .text-services-bold,
-    .text-contact-bold,
-    .text-work-bold,
-    .text-blog-bold {
-        font-weight: var(--font-weight-bold);
-        font-size: var(--header-3);
-        line-height: 64px;
-    }
-
-    section.hero img {
-        margin: 2rem 0;
-    }
-}
-
-@media (max-width: 1200px) {
-    section.hero,
-    section.about,
-    section.services,
-    section.contact,
-    section.work,
-    section.blog {
-        margin: 1rem 0;
-    }
-
-    .text-hero-bold,
-    .text-about-bold,
-    .text-services-bold,
-    .text-contact-bold,
-    .text-work-bold,
-    .text-blog-bold {
-        font-weight: var(--font-weight-bold);
-        font-size: var(--header-3);
-        line-height: 64px;
-    }
-
-    section.hero img {
-        margin: 2rem 0;
+    .text-hero-regular {
+        margin-top: 0;
+        font-size: 13px;
     }
 }
